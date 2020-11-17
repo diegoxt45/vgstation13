@@ -31,7 +31,8 @@
 	var/internal_store = 0
 	var/list/no_storage_slot = new/list()//if the item is equipped in a slot that is contained in this list, the item will act purely as a clothing item and not a storage item (ie plastic bags over head)
 	var/rustle_sound = "rustle"
-
+    var/drop_on_ground = true
+  
 /obj/item/weapon/storage/proc/can_use()
 	return TRUE
 
